@@ -1,0 +1,98 @@
+/* Define vars for the root element */
+:root {
+    --main-bg-color: #f4f4f4;
+    --main-txt-color: #333;
+    --container-width: 90%;
+    --header-bg-color: #333;
+    --header-txt-color: #fff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+  }
+  
+  .container {
+    width: var(--container-width);
+    margin: 20px auto;
+  }
+  
+  header#main-header {
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+  }
+  
+  header#main-header h1 {
+    padding: 0;
+    margin: 0 65px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    --gap: 20;
+    grid-gap: calc(var(--gap) * 1px);
+    align-items: center;
+  }
+  
+  /* Define box vars */
+  .box{
+    --box-bg-color: #ddd;
+    --box-main-color: #06c;
+    --box-padding: 5px 10px;
+    --box-shadow-h-offset: 10px;
+    --box-shadow-v-offset: 5px;
+    --box-shadow-blur: 5px;
+  }
+  
+  .box {
+    background-color: var(--box-bg-color);
+    padding: var(--box-padding);
+    border: 1px solid var(--box-main-color);
+    box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset)
+      var(--box-shadow-blur) var(--box-main-color);
+  }
+  
+  .box h1 {
+    color: var(--box-main-color);
+  }
+  
+  
+  .box p {
+    /* --box-main-color: #555;
+    color: var(--box-main-color); */
+  
+    color: var(--box-p-color, #555);
+  }
+
+  .sec{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    width:100%;
+    text-align: center;
+    margin-bottom:20px;
+  }
+    .sec div{
+      --box-bg-color: #ddd;
+      --div-main-color: #06c;
+      --div-padding: 15px 5px;
+      --div-margin: 35px 0 0 20px;
+      --div-shadow-offset: 9px 5px;  
+      --div-shadow-blur: 5px;
+    }
+  
+    .sec div{    
+      width:85%;
+      background-color: var(--box-bg-color);
+      padding: var(--div-padding);
+      margin: var(--div-margin);
+      border: 1px solid var(--div-main-color);
+      box-shadow: var(--div-shadow-offset) var(--div-shadow-blur) var(--div-main-color);
+
+    }
+
+  

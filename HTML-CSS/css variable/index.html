@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS Variables</h1>
+      </header>
+      
+      <div class="container">
+        <div class="grid">
+          <div class="box">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod ullam necessitatibus itaque quisquam incidunt obcaecati temporibus sint nulla exercitationem.</p>
+          </div>
+          <div class="box">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod ullam necessitatibus itaque quisquam incidunt obcaecati temporibus sint nulla exercitationem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="para1">         
+           <h1>PARAGRAPH</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum provident minus laboriosam ipsa mollitia illo cum eligendi aliquam quisquam, consequatur non in temporibus dignissimos soluta. Optio cupiditate error est ducimus!</div>
+        <div class="para2">
+          <h1>PARAGRAPH</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque itaque unde id dignissimos at aspernatur voluptas saepe pariatur accusantium eos officiis, eius quod facilis excepturi repellendus officia nam voluptatibus.
+        </div>
+        <div class="para3">
+          <h1>PARAGRAPH</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque itaque unde id dignissimos at aspernatur voluptas saepe pariatur accusantium eos officiis, eius quod facilis excepturi repellendus officia nam voluptatibus.</div>
+        <div class="para4">
+          <h1>PARAGRAPH</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque itaque unde id dignissimos at aspernatur voluptas saepe pariatur accusantium eos officiis, eius quod facilis excepturi repellendus officia nam voluptatibus.</div>
+        <div class="para5"> <h1>PARAGRAPH</h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque itaque unde id dignissimos at aspernatur voluptas saepe pariatur accusantium eos officiis, eius quod facilis excepturi repellendus officia nam voluptatibus.</div>
+          <div><img width="85%" height="150px"src="https://source.unsplash.com/1600x900/?nature,water"><img width="85%" height="150px"src="https://source.unsplash.com/1600x900/?nature,lake"></div></div>
+      
+</body>
+<script>
+    const box = document.querySelector(".box");
+const boxStyles = getComputedStyle(box);
+const boxMainColor = boxStyles.getPropertyValue("--box-main-color");
+
+const header = document.querySelector("#main-header");
+header.style.setProperty("--header-bg-color", boxMainColor);
+
+</script>
+</html>
